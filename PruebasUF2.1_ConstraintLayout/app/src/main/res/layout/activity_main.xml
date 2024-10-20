@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="36dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Button 1" />
+    <Button
+        android:id="@+id/btnButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        app:layout_constraintStart_toEndOf="@+id/btnButton1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        app:layout_constraintTop_toBottomOf="@+id/btnButton1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnButton4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button 4"
+        app:layout_constraintTop_toBottomOf="@id/btnButton2"
+        app:layout_constraintStart_toEndOf="@id/btnButton3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnButton5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button 5"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnButton6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Button 6"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnButton5" />
+
+    <EditText
+        android:id="@+id/etTextoIntroducido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Este es el texto que introducirá el usuario..."
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/etTextoIntroducido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnButton6"
+        tools:srcCompat="@tools:sample/avatars"
+        android:scaleType="fitXY" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
