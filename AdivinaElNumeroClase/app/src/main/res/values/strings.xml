@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Adivina El Numero Clase</string>
+    <string name="prueba_este_numero">Prueba este número</string>
+    <string name="introduce_tu_numero">Introduce tu número</string>
+    <string name="tv_intentos">Intentos restantes: %1$d</string>
+    <string name="tv_pista_ini">Debes adivinar el número secreto entre %1$d y %2$d. Tienes %3$d intentos</string>
+    <string name="hint_numero">Introduce un número entre %1$d y %2$d</string>
+    <string name="num_oblig">Debe introducir un número</string>
+    <string name="acertar">Enhorabuena! Has acertado el número: %1$d</string>
+    <string name="btn_fin">Juego terminado</string>
+    <string name="numero_menor">El número secreto es menor que el introducido</string>
+    <string name="numero_mayor">El número secreto es mayor que el introducido</string>
+    <string name="error">Lo siento, has agotado el número de intentos. El número secreto era %1$d</string>
+
+</resources>

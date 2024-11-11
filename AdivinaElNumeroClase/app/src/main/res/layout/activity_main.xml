@@ -1,0 +1,63 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#fff644"
+    android:onClick="setOnFocusChangeListener"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- TextView para mostrar los intentos restantes -->
+    <TextView
+        android:id="@+id/tvIntentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Intentos restantes: 5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView para las pistas del juego -->
+    <TextView
+        android:id="@+id/tvPista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Introduce un número entre 1 y 100"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@id/etNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntentos" />
+
+    <!-- EditText para introducir el número -->
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:hint="@string/introduce_tu_numero"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprobar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón para comprobar el número -->
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="comprobarNumero"
+        android:text="@string/prueba_este_numero"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
