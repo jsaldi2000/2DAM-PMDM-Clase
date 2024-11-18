@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:padding="@dimen/padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_intentos"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/tvPista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_pista_ini"
+        android:textSize="@dimen/text_size"/>
+
+    <!-- -->
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="@string/hint_numero"
+        android:inputType="number"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:text="@string/btn_comprobar"
+        android:textSize="@dimen/text_size"
+        android:onClick="comprobarNumero"/>
+
+
+</RelativeLayout>

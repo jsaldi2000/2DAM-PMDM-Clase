@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Guess the Number</string>
+    <string name="tv_intentos">Remaining attempts: %1$d</string>
+    <string name="tv_pista_ini">You need to guess the secret number between %1$d and %2$d. You have %3$d attempts</string>
+    <string name="hint_numero">Enter a number between %1$d and %2$d</string>
+    <string name="btn_comprobar">Check number</string>
+    <string name="acertar">Congratulations! You\'ve guessed the number: %1$d</string>
+    <string name="numero_mayor">The secret number is greater than the entered number</string>
+    <string name="numero_menor">The secret number is smaller than the entered number</string>
+    <string name="error">Sorry, you\'ve run out of attempts. The secret number was %1$d</string>
+    <string name="btn_fin">Game Over</string>
+    <string name="num_oblig">You must enter a number</string>
+    <string name="prueba_este_numero">Try this number</string>
+    <string name="stop_message">Please, stop the application</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivivityForResultClase</string>
+    <string name="tv_persona_seleccionada">Persona seleccionada: Ninguna</string>
+</resources>

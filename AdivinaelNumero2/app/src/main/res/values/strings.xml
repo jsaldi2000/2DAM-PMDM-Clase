@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Adivina el numero</string>
+    <string name="tv_intentos">Intentos restantes: %1$d</string>
+    <string name="tv_pista_ini">%4$s, debes adivinar el número secreto entre %1$d y %2$d. Tienes %3$d intentos</string>
+    <string name="hint_numero">Introduce un número entre %1$d y %2$d</string>
+    <string name="btn_comprobar">Comprobar número</string>
+    <string name="acertar">Enhorabuena %2$s! Has acertado el número: %1$d</string>
+    <string name="numero_mayor">%1$s, el número secreto es mayor que el introducido</string>
+    <string name="numero_menor">%1$s, el número secreto es menor que el introducido</string>
+    <string name="error">Lo siento %2$s has agotado el número de intentos. El número secreto era %1$d</string>
+    <string name="btn_fin">Juego terminado</string>
+    <string name="num_oblig">Debe introducir un número</string>
+    <string name="btn_iniciar">Iniciar juego</string>
+    <string name="hint_et_nick">Introduce un nick</string>
+    <string name="hint_et_intentos">Introduce el número de intentos</string>
+    <string name="no_data">Debes introducir todos los datos</string>
+</resources>

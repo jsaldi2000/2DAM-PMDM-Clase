@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context=".InicioActivity">
+
+    <EditText
+        android:id="@+id/etNick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_et_nick"/>
+
+    <EditText
+        android:id="@+id/etIntentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_et_intentos"
+        android:inputType="number"
+        android:layout_below="@id/etNick"
+        android:layout_marginTop="@dimen/padding"/>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_iniciar"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EstiloLetra"    parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Tema de diálogo personalizado en negrita -->
+    <style name="EstiloLetra.Negrita">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Tema de diálogo personalizado para la actividad -->
+    <style name="DialogTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Ajustar el ancho y alto mínimo del cuadro de diálogo -->
+        <item name="android:windowMinWidthMajor">80%</item> <!-- Ancho mínimo del diálogo (en % de la pantalla) -->
+        <item name="android:windowMinWidthMinor">80%</item> <!-- Ancho mínimo del diálogo (en % de la pantalla) -->
+        <item name="android:windowIsFloating">true</item> <!-- Hace que sea flotante y con bordes redondeados -->
+
+    </style>
+</resources>
