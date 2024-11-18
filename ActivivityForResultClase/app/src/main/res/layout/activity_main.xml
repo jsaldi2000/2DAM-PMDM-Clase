@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSelectedPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_persona_seleccionada"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnSelectPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="seleccionPersona"
+        android:padding="8dp"
+        android:text="Seleccionar Persona"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectedPersona"
+        tools:layout_editor_absoluteX="18dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
