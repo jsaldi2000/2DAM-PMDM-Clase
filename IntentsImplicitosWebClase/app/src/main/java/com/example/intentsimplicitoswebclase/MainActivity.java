@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -57,6 +58,22 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "No se encontró ninguna app de correo electrónico", Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+    // Método para reproducir el video en el Video View
+    public void playVideo(View view){
+
+        // Asignar el video view
+        VideoView vvVideo = findViewById(R.id.vvVideo);
+
+        // Ruta al video en res/raw
+        String uriPath = "android.resource://" + getPackageName() + "/" + R.raw.video;
+        Uri uri = Uri.parse(uriPath);
+
+        // configuro y reproduzco
+        vvVideo.setVideoURI(uri);
+        vvVideo.start();
     }
 
 }

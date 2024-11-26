@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context=".Activity4">
+
+    <TextView
+        android:id="@+id/tvInfoLlaves"
+        style="@style/Letra24" />
+
+    <Button
+        android:id="@+id/btnCogerLlave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="cogerLlave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/btn_cogerLlave" />
+
+    <Button
+        android:id="@+id/btnAbrirPuerta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCogerLlave"
+        android:onClick="abrirPuerta"
+        app:layout_constraintBottom_toTopOf="@id/btnCogerLlave"
+        android:text="@string/btn_abrirPuerta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

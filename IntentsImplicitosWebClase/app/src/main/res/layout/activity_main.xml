@@ -51,5 +51,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSendSms" />
 
+    <Button
+        android:id="@+id/btnPlayVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="playVideo"
+        android:text="Reproducir Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSendEmail" />
+
+    <VideoView
+        android:id="@+id/vvVideo"
+        android:layout_width="386dp"
+        android:layout_height="226dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendEmail"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

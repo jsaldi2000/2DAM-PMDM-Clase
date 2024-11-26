@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAbrirBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="abrirBusqueda"
+        android:text="Abrir Búsqueda"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSeleccionarContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="seleccionarContacto"
+        android:text="Seleccionar Contacto"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirBusqueda"/>
+
+    <Button
+        android:id="@+id/btnMostrarContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mostrarContacto"
+        android:text="Mostrar Contacto"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeleccionarContacto"/>
+
+    <Button
+        android:id="@+id/btnAbrirUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="abrirUbicacion"
+        android:text="Abrir Ubicación"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrarContacto"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

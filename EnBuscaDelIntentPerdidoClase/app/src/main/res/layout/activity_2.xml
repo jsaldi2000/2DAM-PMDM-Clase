@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/tvElegirCamino"
+        style="@style/Letra24" />
+
+    <Button
+        android:id="@+id/btnAtajoLargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="atajoL"
+        android:text="@string/btn_atajoL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnAtajoCorto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAtajoLargo"
+        android:onClick="atajoC"
+        android:text="@string/btn_atajoC"
+        app:layout_constraintBottom_toTopOf="@id/btnAtajoLargo"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
