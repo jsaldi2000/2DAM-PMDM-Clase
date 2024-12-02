@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">En Busca Del Intent Perdido</string>
+    <string name="clave_nombre">NOMBRE</string>
+    <string name="bienvenida">Hola, la búsqueda va a comenzar. Estate muy atento a las indicaciones del juego, sólo así podrás encontrar el Intent perdido.</string>
+    <string name="btn_comienzo">Empieza la búsqueda!</string>
+    <string name="hint_name">Introduce tu nombre para comenzar</string>
+    <string name="msg_no_name">Introduce tu nombre para comenzar</string>
+    <string name="btn_atajoC">Atajo corto</string>
+    <string name="btn_atajoL">Atajo largo</string>
+    <string name="bienvenida2">Bien %s, ya no hay vuelta atrás, ahora sólo hace falta que tu valentía y tu sentido común te ayuden a encontrar el Intent que estamos buscando.</string>
+    <string name="btn_ayuda">Vaya, parece que no has elegido el camino correcto, púlsame para pedir ayuda.</string>
+    <string name="bienvenida4">Has elegido el camino correcto %s, ya estás muy cerca del Intent perdido, abre la puerta para comprobarlo.</string>
+    <string name="btn_abrirPuerta">Abre la puerta</string>
+    <string name="btn_cogerLlave">Coge la llave primero</string>
+    <string name="toastLlaves">Necesitas llaves para poder abrir la puerta.</string>
+    <string name="btn_conLlave">Volver con llave</string>
+    <string name="btn_sinLlave">Volver sin llave</string>
+    <string name="conLlave">Ya tienes la llave, ¡Puedes abrir la puerta!</string>
+    <string name="sinLlave">Aún sigues sin llave</string>
+    <string name="btn_verIntent">Felicidades!! Has encontrado el intent, sólo tienes que hacer clic para verlo</string>
+    <string name="btn_salir">Salir del juego</string>
+    <string name="no_accion">No se ha encontrado ninguna aplicación capaz de realizar la acción indicada</string>
+</resources>

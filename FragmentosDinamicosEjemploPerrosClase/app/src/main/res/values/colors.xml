@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores principales -->
+    <color name="colorPrimary">#F44336</color><!-- Rojo estándar -->
+    <color name="colorPrimaryDark">#D32F2F</color> <!-- Rojo oscuro -->
+    <color name="colorAccent">#FF5252</color> <!-- Rojo acentuado -->
+    <color name="red">#F44336</color> <!-- Rojo estándar -->
+
+    <!-- Colores adicionales -->
+    <color name="colorBackground">#FFEBEE</color> <!-- Fondo claro -->
+    <color name="colorTextPrimary">#B71C1C</color> <!-- Texto oscuro -->
+    <color name="colorTextSecondary">#EF9A9A</color> <!-- Texto claro -->
+
+
+</resources>

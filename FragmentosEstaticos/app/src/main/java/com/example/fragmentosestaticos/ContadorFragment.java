@@ -1,12 +1,13 @@
-package com.example.fragmentosestaticosclase;
+package com.example.fragmentosestaticos;
 
 import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.content.Context;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,16 +16,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 
 public class ContadorFragment extends Fragment {
 
-    private static final String TAG = "CicloDeVida";
+    private static final String TAG = "CicloDeVida"; // Etiqueta para los Logs
     private EditText etTexto;
-    private TextView tvLetras;
     private Button btnCalcular;
+    private TextView tvLetras;
 
     public ContadorFragment() {
-        // Required empty public constructor
+        // Constructor vacío requerido
     }
 
     // Se llama cuando el fragmento se asocia a la actividad
@@ -39,6 +44,68 @@ public class ContadorFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate Fragmento");
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        // Traza logcat
+        Log.d(TAG, "onCreateView Fragmento");
+
+        // Inflar el diseño del fragmento
+        View view = inflater.inflate(R.layout.fragment_contador, container, false);
+
+        // Referenciar los componentes
+        etTexto = view.findViewById(R.id.etTexto);
+        btnCalcular = view.findViewById(R.id.btnCalcular);
+        tvLetras = view.findViewById(R.id.tvLetras);
+
+        // Configurar la acción del botón
+        btnCalcular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String texto = etTexto.getText().toString();
+                int numeroLetras = texto.length();
+                tvLetras.setText("Número de caracteres: " + numeroLetras);
+            }
+        });
+
+        return view;
+    }
+
+    private void calcular() {
+
+        String texto = etTexto.getText().toString();
+        int numeroLetras = texto.length();
+        tvLetras.setText("Número de caracteres: " + numeroLetras);
+    }
+
+    // Guardamos variable en el bundle outState para recuperar en rotación de pantalla
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+        super.onViewStateRestored(outState);
+
+        // onSaveInstanceState guardado de número de caracteres
+        Log.d(TAG, "onSaveInstanceState Fragmento");
+
+        // Guardar el texto del TextView en el bundle
+        outState.putString("textoGuardado", tvLetras.getText().toString());
+    }
+
+
+    // Recuperamos el bundle con onViewStateRestored
+    @Override
+    public void onViewStateRestored(Bundle saveInstanceState){
+        super.onViewStateRestored(saveInstanceState);
+
+        // onViewStateRestored recuperación de número de caracteres
+        Log.d(TAG, "onViewStateRestored Fragmento");
+
+        if (saveInstanceState != null){
+
+            // Recuperamos el valor del bundle
+            tvLetras.setText(saveInstanceState.getString("textoGuardado", ""));
+        }
     }
 
     // Se llama cuando la actividad asociada al fragmento ha completado su `onCreate`
@@ -97,57 +164,4 @@ public class ContadorFragment extends Fragment {
         Log.d(TAG, "onDetach Fragmento");
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        // Traza logcat
-        Log.d(TAG, "onCreateView Fragmento");
-
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_contador, container, false);
-
-        // Inicializamos los componentes
-        etTexto = view.findViewById(R.id.etTexto);
-        tvLetras = view.findViewById(R.id.tvLetras);
-        btnCalcular = view.findViewById(R.id.btnCalcular);
-
-        // Crear onClickListener para realizar el cálculo en el TextView
-        btnCalcular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                calcular();
-            }
-        });
-
-        return view;
-
-    }
-
-    private void calcular() {
-        String texto = etTexto.getText().toString();
-        int numeroLetras = texto.length();
-        tvLetras.setText("Número de caracteres: " + numeroLetras);
-    }
-
-    // Guardamos variable en el bundle outState para recuperar en rotación de pantalla
-    @Override
-    public void onSaveInstanceState(Bundle outState){
-        super.onViewStateRestored(outState);
-
-        // Guardar el texto del TextView en el bundle
-        outState.putString("textoGuardado", tvLetras.getText().toString());
-    }
-
-
-    // Recuperamos el bundle con onViewStateRestored
-    @Override
-    public void onViewStateRestored(Bundle saveInstanceState){
-        super.onViewStateRestored(saveInstanceState);
-
-        if (saveInstanceState != null){
-
-            // Recuperamos el valor del bundle
-            tvLetras.setText(saveInstanceState.getString("textoGuardado", ""));
-        }
-    }
 }
