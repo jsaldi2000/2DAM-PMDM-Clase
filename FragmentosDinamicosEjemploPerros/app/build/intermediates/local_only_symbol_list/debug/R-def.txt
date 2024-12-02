@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorBackground
+color colorPrimary
+color colorPrimaryDark
+color colorTextPrimary
+color colorTextSecondary
+color red
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnCancelar
+id btnSeleccionar
+id contenedorFragmentos
+id etNombrePerro
+id layoutButtons
+id llSeleccion
+id scrollViewIntervenciones
+id svPerros
+id tvFecha
+id tvMotivo
+id tvObservaciones
+id tvSeleccionTitulo
+id tvTitulo
+layout activity_main
+layout activity_seleccion_perro
+layout fragment_intervencion
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string hello_blank_fragment
+style Base.Theme.FragmentosDinamicosEjemploPerros
+style Theme.FragmentosDinamicosEjemploPerros
+xml backup_rules
+xml data_extraction_rules

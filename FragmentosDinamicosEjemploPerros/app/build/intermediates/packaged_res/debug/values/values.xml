@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorBackground">#FFEBEE</color>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorTextPrimary">#B71C1C</color>
+    <color name="colorTextSecondary">#EF9A9A</color>
+    <color name="red">#F44336</color>
+    <string name="app_name">FragmentosDinamicosEjemploPerros</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="Theme.FragmentosDinamicosEjemploPerros" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+</resources>
